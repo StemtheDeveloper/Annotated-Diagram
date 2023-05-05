@@ -1,0 +1,159 @@
+
+
+/* html, body, div, span, applet, object, iframe, center,
+em, img,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font: inherit;
+    vertical-align: baseline;
+} */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {list-style: none; margin: 0; padding: 0;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+
+    /* reset chrome useragent setting for blockqoute */
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+table {
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* end of reset */
+
+
+/* reset focus */
+
+:focus {
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+
+/* universal polyfills for unknown html objects */
+
+main {
+    display: block;
+}
+
+app-media-resized {
+    display: block;
+    position: relative;
+}
+
+.grid {
+	position: absolute;
+  width: 100vw;
+  height: 100vh;
+	background-color: #ffffff;
+	opacity: 100%;
+	overflow: hidden;
+}
+
+.grid .contents {
+	position: absolute;
+  transform-origin: 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+nav {
+
+  background-color: #c5c5c5;;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#mainPages {
+  display: flex;
+  flex-direction: row;
+  row-gap: 100px;
+  column-gap: 100px;
+  gap: 100px;
+
+}
+
+#newProject {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  column-gap: 100px;
+  gap: 100px;
+}
+
+#signIn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  column-gap: 100px;
+  gap: 100px;
+}
+
+/* img {
+  width: 3840px;
+  height: 2160px;
+} */
+
+canvas {
+
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.controls {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 5px;
+  gap: 10px;
+  z-index: 11;
+}
+
+.canvasContainer {
+  z-index: 10;
+}
+
